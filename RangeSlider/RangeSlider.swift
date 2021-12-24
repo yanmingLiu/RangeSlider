@@ -125,10 +125,7 @@ public class RangeSlider: UIControl {
         }
     }
     
-    var gapBetweenThumbs: Double {
-        return 0.1
-//        return 2.0 * Double(thumbWidth) * (maximumValue - minimumValue) / Double(bounds.width)
-    }
+    public var gapBetweenThumbs: Double = 0.1
     
     @IBInspectable public var trackTintColor = UIColor(white: 0.9, alpha: 1.0) {
         didSet {
